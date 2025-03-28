@@ -19,7 +19,7 @@ class Actors(models.Model):
         super().save(**kwargs)
 
     def __str__(self):
-        return self.title
+        return self.name
 
 class Movie(models.Model):
     title = models.CharField(max_length=150)
